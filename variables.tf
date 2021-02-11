@@ -7,14 +7,15 @@ variable "vpc_id" {
 }
 
 variable "mount_target_tags" {
-  description  = "Mount target tags"
-  type = "map"
+  description = "Mount target tags"
+  type        = map(string)
 }
 
 variable "subnet" {
-  description  = "Subnets where the target will be mounted"
+  description = "Subnets where the target will be mounted"
 }
 
 variable "efs_id" {
-  description  = "Id of the EFS to be mounted"
+  description = "Id of the EFS to be mounted"
 }
+
